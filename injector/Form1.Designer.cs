@@ -139,7 +139,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(70, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(815, 413);
             this.panel2.TabIndex = 3;
@@ -203,7 +203,7 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(891, 0);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(815, 413);
             this.panel3.TabIndex = 4;
@@ -414,8 +414,8 @@
             // panel9
             // 
             this.panel9.Controls.Add(this.button6);
-            this.panel9.Controls.Add(this.panel2);
             this.panel9.Controls.Add(this.label26);
+            this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label25);
             this.panel9.Controls.Add(this.button4);
@@ -560,7 +560,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(903, 413);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Hack", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
