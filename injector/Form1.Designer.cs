@@ -1,16 +1,11 @@
-﻿namespace injector
+﻿using System.Drawing;
+
+namespace injector
 {
     partial class Form1
     {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +17,6 @@
 
         #region Код, автоматически созданный конструктором форм Windows
 
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -34,6 +25,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,30 +45,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label23 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +88,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "credit";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -117,6 +102,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "main";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -130,9 +116,11 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "home";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
@@ -143,6 +131,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(815, 413);
             this.panel2.TabIndex = 3;
+            this.panel2.Visible = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Hack", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(3, 9);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(219, 34);
+            this.label27.TabIndex = 7;
+            this.label27.Text = "EclipseForge";
             // 
             // label5
             // 
@@ -222,7 +222,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.BackgroundImage = new Bitmap(Properties.Resources.fxeelPFP);
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Location = new System.Drawing.Point(26, 57);
             this.panel7.Name = "panel7";
@@ -274,7 +274,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImage = new Bitmap(Properties.Resources.zyoruPFP1);
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(26, 57);
             this.panel4.Name = "panel4";
@@ -343,79 +343,12 @@
             this.label10.Size = new System.Drawing.Size(142, 31);
             this.label10.TabIndex = 2;
             this.label10.Text = "credits:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Hack", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(3, 9);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(126, 31);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "welcome";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Hack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(6, 49);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(271, 15);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "we dont have much, but its useful";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.label17.Location = new System.Drawing.Point(6, 75);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(259, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "while i was doing ui i got: brainrot";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(679, 378);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(133, 13);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "made by: zyorugrim";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(637, 391);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(175, 13);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "god contributor: F(x)eel";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Controls.Add(this.label19);
-            this.panel8.Location = new System.Drawing.Point(70, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(815, 413);
-            this.panel8.TabIndex = 5;
-            this.panel8.Visible = false;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.button6);
-            this.panel9.Controls.Add(this.label26);
             this.panel9.Controls.Add(this.panel3);
+            this.panel9.Controls.Add(this.label26);
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label25);
             this.panel9.Controls.Add(this.button4);
@@ -427,74 +360,31 @@
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(815, 413);
-            this.panel9.TabIndex = 6;
-            this.panel9.Visible = false;
+            this.panel9.TabIndex = 7;
             // 
-            // label21
+            // button6
             // 
-            this.label21.AutoSize = true;
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(623, 378);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(189, 13);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "project founder: zyorugrim";
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(9, 106);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(70, 23);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "execute";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label24
+            // label26
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Hack", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(3, 9);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(158, 31);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "execution";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(616, 391);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(196, 13);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "project co-founder: F(x)eel";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.label22.Location = new System.Drawing.Point(102, 51);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 13);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "file path";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(9, 46);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "open file";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Hack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(525, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(287, 90);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "guide:\r\n1. find god tier dll for cheats\r\n2. open it with  button \"open file\"\r\n3. " +
-    "find needed procces\r\n4. profit!11\r\n\r\n";
+            this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.label26.Location = new System.Drawing.Point(85, 111);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(336, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "execute status (r/g text color based on status)";
             // 
             // button5
             // 
@@ -519,39 +409,72 @@
             this.label25.TabIndex = 8;
             this.label25.Text = "process path";
             // 
-            // button6
+            // button4
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(9, 106);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(70, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "execute";
-            this.button6.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(9, 46);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 23);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "open file";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label26
+            // label20
             // 
-            this.label26.AutoSize = true;
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.label26.Location = new System.Drawing.Point(85, 111);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(336, 13);
-            this.label26.TabIndex = 10;
-            this.label26.Text = "execute status (r/g text color based on status)";
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(616, 391);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(196, 13);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "project co-founder: F(x)eel";
             // 
-            // label27
+            // label21
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Hack", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(3, 9);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(219, 34);
-            this.label27.TabIndex = 7;
-            this.label27.Text = "EclipseForge";
+            this.label21.AutoSize = true;
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(623, 378);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(189, 13);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "project founder: zyorugrim";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.label22.Location = new System.Drawing.Point(102, 51);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(70, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "file path";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Hack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(525, 9);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(287, 90);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "guide:\r\n1. find god tier dll for cheats\r\n2. open it with  button \"open file\"\r\n3. " +
+    "find needed procces\r\n4. profit!11\r\n\r\n";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Hack", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(3, 9);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(158, 31);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "execution";
             // 
             // Form1
             // 
@@ -559,7 +482,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(903, 413);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Hack", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -576,8 +498,6 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.ResumeLayout(false);
@@ -610,24 +530,18 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
     }
 }
 

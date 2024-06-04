@@ -7,4 +7,4 @@ D:\code\c#\injector\injector\injector\obj\Debug\injector.csproj.GenerateResource
 D:\code\c#\injector\injector\injector\obj\Debug\injector.csproj.CoreCompileInputs.cache
 D:\code\c#\injector\injector\injector\obj\Debug\injector.exe
 D:\code\c#\injector\injector\injector\obj\Debug\injector.pdb
-D:\code\c#\injector\injector\injector\obj\Debug\injector.Form1.resources
+D:\code\c#\injector\injector\injector\obj\Debug\Injector.resources
